@@ -1,3 +1,4 @@
+package edu.diana.firstweek;
 public class MyVariable {
     public static void main (String [] args){
         String meuNome = "Diana";
