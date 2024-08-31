@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class VerificacaoContrato {
 
     // Função para verificar se o cliente contratou um combo completo
     public static String verificarComboCompleto(String[] servicosContratados) {
@@ -11,10 +11,18 @@ public class Main {
 
         // TODO: Itere sobre os serviços contratados
         for (String servico : servicosContratados) {
+          // Verificando cada serviço
+            if (servico.trim().equalsIgnoreCase("movel")) {
+                movelContratado = true;
+            } else if (servico.trim().equalsIgnoreCase("banda larga")) {
+                bandaLargaContratada = true;
+            } else if (servico.trim().equalsIgnoreCase("tv")) {
+                tvContratada = true;
+            }
         }
 
-        // TODO: Verifique se todos os serviços foram contratados
-        if () {
+        // Verificando se todos os serviços foram contratados
+        if (movelContratado && bandaLargaContratada && tvContratada) {
             return "Combo Completo";
         } else {
             return "Combo Incompleto";
