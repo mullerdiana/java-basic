@@ -1,5 +1,6 @@
 package gof;
 
+import gof.facade.Facade;
 import gof.singleton.SingletonEager;
 import gof.singleton.SingletonLazy;
 import gof.singleton.SingletonLazyHolder;
@@ -44,5 +45,13 @@ public class Teste {
         robo.mover();
         robo.mover();
         robo.setComportamento(defensivo);
+        // Facade
+
+        Facade facade = new Facade();
+        facade.migrarCliente("Diana", "12345678");
+    
+    
+    
     }
+
 }
