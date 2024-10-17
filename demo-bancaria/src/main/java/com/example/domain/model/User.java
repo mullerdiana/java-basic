@@ -1,4 +1,4 @@
-package com.example.demo_bancaria.model;
+package com.example.domain.model;
 
 import java.util.List;
 
