@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url:  jdbc:${DATABASE_URL}
+    username: postgres
+    password: CFFicEdtUKdUwcTZWmHkWDSYNxAQDyWU
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: create
